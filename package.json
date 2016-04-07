@@ -1,0 +1,35 @@
+{
+  "name": "react-play",
+  "version": "1.0.0",
+  "description": "### Getting Started With React https://facebook.github.io/react/docs/getting-started.html",
+  "main": "src/js/main.js",
+  "browserify": {
+      "transform" : [
+          ["babelify", { "presets": ["react"] }],
+          ["envify", { "NODE_ENV" : "production" }]
+      ]
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "envify": "^3.4.0",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "watchify src/js/main.js -o build/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhellema/react-play.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhellema/react-play/issues"
+  },
+  "homepage": "https://github.com/bhellema/react-play#readme"
+}
