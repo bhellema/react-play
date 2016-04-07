@@ -4,16 +4,29 @@
   "description": "### Getting Started With React https://facebook.github.io/react/docs/getting-started.html",
   "main": "src/js/main.js",
   "browserify": {
-      "transform" : [
-          ["babelify", { "presets": ["react"] }],
-          ["envify", { "NODE_ENV" : "production" }]
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "react"
+          ]
+        }
+      ],
+      [
+        "envify",
+        {
+          "NODE_ENV": "production"
+        }
       ]
+    ]
   },
   "dependencies": {
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
     "envify": "^3.4.0",
+    "jquery": "^2.2.3",
     "react": "^0.14.8",
     "react-dom": "^0.14.8"
   },

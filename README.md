@@ -13,3 +13,10 @@ https://facebook.github.io/react/docs/getting-started.html
  browserify -t [ envify --NODE_ENV=production  ] -t [ babelify --presets [ react ] ] src/main.js -o build/react-play-prod.js
 
 _Pro Tip:_ use envify to control production and dev modes.  Install envify via `npm install envify`.
+
+
+#### Tags
+
+v1.0 - initial project setup
+v1.1-components - shows how to create components with React.createClass
+v1.2-forms - shows how to wire up handlers and forms to state data
