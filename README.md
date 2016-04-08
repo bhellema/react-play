@@ -16,6 +16,7 @@ _Pro Tip:_ use envify to control production and dev modes.  Install envify via `
 
 
 #### Tags
-- v1.2-forms - shows how to wire up handlers and forms to state data
-- v1.1-components - shows how to create components with React.createClass
-- v1.0 - initial project setup
+- v1.3-modules - refactor all js files into jsx component files.
+- v1.2-forms - shows how to wire up handlers and forms to state data.
+- v1.1-components - shows how to create components with React.createClass.
+- v1.0 - initial project setup.
