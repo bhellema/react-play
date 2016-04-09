@@ -1,6 +1,11 @@
 var React = require('react');
 
 var Comment = React.createClass({
+    displayName: 'Comment',
+    propTypes: {
+        author: React.PropTypes.string,
+        children: React.PropTypes.string
+    },
     render: function() {
         return (
             <div className="comment">

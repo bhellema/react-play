@@ -1,6 +1,9 @@
 var React = require('react');
 
 var CommentForm = React.createClass({
+    propTypes: {
+        onCommentSubmit: React.PropTypes.func.isRequired
+    },
     getInitialState: function() {
         return {author: '', text: ''};
     },
@@ -22,7 +25,9 @@ var CommentForm = React.createClass({
     },
     render: function() {
         return (
-            <form className="commentForm" onSubmit={this.handleSubmit}>
+            <form
+                className="commentForm"
+                onSubmit={this.handleSubmit}>
                 <input
                     type="text"
                     placeholder="Your name"

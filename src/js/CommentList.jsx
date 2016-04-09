@@ -2,6 +2,9 @@ var React = require('react');
 var Comment = require('./Comment');
 
 var CommentList = React.createClass({
+    propTypes: {
+        data: React.PropTypes.array
+    },
     render: function() {
         var commentNodes = this.props.data.map(function(comment) {
             return (

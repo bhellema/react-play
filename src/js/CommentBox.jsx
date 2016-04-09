@@ -5,7 +5,9 @@ var CommentForm = require('./CommentForm');
 
 var CommentBox = React.createClass({
     displayName: 'CommentBox',
-
+    propTypes: {
+        url: React.PropTypes.string
+    },
     loadCommentsFromServer: function() {
         $.ajax({
             url: this.props.url,
@@ -15,7 +17,7 @@ var CommentBox = React.createClass({
                 this.setState({data:data});
             }.bind(this),
             error: function(xhr, status, err) {
-                console.error(this.props.url, status, err.toString());
+                throw Error(this.props.url, status, err.toString());
             }.bind(this)
         });
     },
@@ -29,7 +31,7 @@ var CommentBox = React.createClass({
 
         // Comment out the POST for simple demo purposes, the above code will add
         // the new comment to the data source.
-        
+
         /*$.ajax({
             url: this.props.url,
             dataType: 'json',

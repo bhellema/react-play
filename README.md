@@ -14,6 +14,10 @@ https://facebook.github.io/react/docs/getting-started.html
 
 _Pro Tip:_ use envify to control production and dev modes.  Install envify via `npm install envify`.
 
+#### Setting Up Atom
+I've added the following packages to help out:
+
+- linter-eslint
 
 #### Tags
 - v1.3-modules - refactor all js files into jsx component files.
