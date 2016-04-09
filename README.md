@@ -20,6 +20,7 @@ I've added the following packages to help out:
 - linter-eslint
 
 #### Tags
+- v1.4-linting-validation - adding linting and propType validation.
 - v1.3-modules - refactor all js files into jsx component files.
 - v1.2-forms - shows how to wire up handlers and forms to state data.
 - v1.1-components - shows how to create components with React.createClass.
